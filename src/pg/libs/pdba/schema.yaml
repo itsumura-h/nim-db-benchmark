@@ -1,0 +1,8 @@
+tables:
+  - name: world
+    table_name: world
+    columns:
+      - {name: id, dbtype: serial}
+      - {name: randomNumber, dbtype: int}
+    primary_keys:
+      - id
