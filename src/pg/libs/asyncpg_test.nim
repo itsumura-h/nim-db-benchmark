@@ -1,6 +1,6 @@
 import os, strutils, strformat, asyncdispatch
 import ../../pkg/asyncpg/asyncpg
-import ../../benchTmpl
+import ../../base
 
 const
   HOST = getEnv("DB_CONNECTION").string.split(":")[0]

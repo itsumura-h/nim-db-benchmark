@@ -5,6 +5,8 @@ template bench*(msg, body) =
     echo "=== " & msg
     let start = cpuTime()
     body
-    echo cpuTime() - start
+    let time = cpuTime() - start
+    echo time
 
 const LENGTH* = 10
+const QUERY* = "SELECT * FROM world"

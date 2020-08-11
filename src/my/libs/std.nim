@@ -1,4 +1,4 @@
-import os, db_postgres
+import os, db_mysql
 import ../../base
 
 let db = open(

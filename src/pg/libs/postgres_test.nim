@@ -1,6 +1,6 @@
 import os, asyncdispatch, strutils, net
 import ../../pkg/postgres/src/postgres
-import ../../benchTmpl
+import ../../base
 
 const
   HOST = getEnv("DB_CONNECTION").string.split(":")[0]
