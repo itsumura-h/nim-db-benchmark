@@ -2,7 +2,8 @@ import os
 
 # DB Connection
 putEnv("DB_DRIVER", "mysql")
-putEnv("DB_CONNECTION", "tfb-database-my:3306")
+# putEnv("DB_CONNECTION", "tfb-database-my:3306")
+putEnv("DB_CONNECTION", "tfb-database-pg:5433")
 putEnv("DB_USER", "benchmarkdbuser")
 putEnv("DB_PASSWORD", "benchmarkdbpass")
 putEnv("DB_DATABASE", "hello_world")

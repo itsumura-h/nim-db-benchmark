@@ -12,4 +12,4 @@ proc std*() =
   let db = db
   defer: db.close()
   for _ in 0..LENGTH:
-    discard db.getAllRows(sql"SELECT * FROM world")
+    discard db.getAllRows(sql QUERY)

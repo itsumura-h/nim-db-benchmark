@@ -17,6 +17,9 @@ bench("pg allographer plain"):
 bench("pg asyncpg"):
   asyncpgTest()
 
+bench("pg asyncpg plain"):
+  asyncpgPlainTest()
+
 # impossible to run
 # bench("pg postgres"):
 #   postgresTest()

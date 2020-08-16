@@ -14,6 +14,7 @@ db.loadDBYaml("./pg/libs/pdba/schema.yaml")
 
 proc pdba*() =
   let conn = db.connect()
+  defer: conn.close()
   let world = db.tbl["world"]
   for _ in 0..LENGTH:
     var rows = conn.getAllRows world.query

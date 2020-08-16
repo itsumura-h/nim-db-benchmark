@@ -11,7 +11,7 @@ const
 
 proc postgresTest*() =
   let db = waitFor openAsync(host=HOST, port=PORT, user=USER, password=PASSWORD, database=DBNAME)
-  let reader = waitFor db.query("SELECT * FROM world")
+  let reader = waitFor db.query(QUERY)
   defer: waitFor reader.close()
   while waitFor reader.read():
-    echo reader[0].repr
+    discard reader[0].repr
